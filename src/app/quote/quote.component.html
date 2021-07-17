@@ -4,7 +4,7 @@
       <div *ngFor='let quote of quotes; let i = index'>
         <ul>
           <li>{{quote.name}} </li>
-          <li>date:{{quote.completeDate|date}}</li>
+          <li>date:{{quote.postDate|date}}</li>
           <app-quote-detail [quote]= 'quote'></app-quote-detail>
         </ul>
 
