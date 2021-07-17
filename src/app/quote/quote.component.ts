@@ -9,12 +9,12 @@ import {Quote} from '../quote'
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    { id: 1, name: 'Watch finding',description:'huh, just a quote' },
-    { id: 2, name: 'Buy Cookies', description:'huh, just a quote' },
-    { id: 3, name: 'Get new Phone Case',description:'huh, just a quote' },
-    { id: 4, name: 'Get Dog Food' ,description:'huh, just a quote'},
-    { id: 5, name: 'Get new Phone Case', description:'huh, just a quote'},
-    { id: 6, name: 'Get Dog Food' ,description:'huh, just a quote'},
+    new Quote('Watch finding Nemo', 'Find an online version and watch merlin find his son',new Date(2020,3,14), 'John'),
+    new Quote('Buy Cookies','I have to buy cookies for the parrot',new Date(2019,6,9),'Kate'),
+    new Quote('Get new Phone Case','Diana has her birthday coming up soon',new Date(2022,1,12),'Perrys'),
+    new Quote('Get Dog Food','Pupper likes expensive snacks',new Date(2019,0,18),'Jake'),
+    new Quote('Solve math homework','Damn Math',new Date(2019,2,14),'Jmes'),
+    new Quote('Plot my world domination plan','Cause I am an evil overlord',new Date(2030,3,14),'Jade'),
   ];
 
   constructor() {}
