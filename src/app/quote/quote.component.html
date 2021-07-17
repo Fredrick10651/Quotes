@@ -1,10 +1,13 @@
-<div>
+<div >
     <h1>My Quotes</h1>
-    <ul>
-      <li *ngFor='let quote of quotes'>
-        {{quote.name}}
-      </li>
-      <p *ngIf='quotes.length > 5'> your quote is long</p>
-  
-    </ul>
+    
+      <div *ngFor='let quote of quotes; let i = index'>
+        <ul>
+          <li>{{quote.name}} </li>
+          <li>date:{{quote.completeDate|date}}</li>
+          <app-quote-detail [quote]= 'quote'></app-quote-detail>
+        </ul>
+
+      </div>
+      
   </div>
