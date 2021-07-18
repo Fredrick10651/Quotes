@@ -16,6 +16,16 @@ export class QuoteComponent implements OnInit {
     new Quote('Solve math homework','Damn Math',new Date(2019,2,14),'Jmes'),
     new Quote('Plot my world domination plan','Cause I am an evil overlord',new Date(2030,3,14),'Jade'),
   ];
+  
+  deleteQuote(isComplete, index){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
+
+      if (toDelete){
+        this.quotes.splice(index,1)
+      }
+    }
+  }
 
   constructor() {}
 
