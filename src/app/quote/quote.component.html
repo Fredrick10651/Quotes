@@ -1,13 +1,25 @@
-<div >
+<div class="Container-flid">
+  
     <h1>My Quotes</h1>
-    
-      <div *ngFor='let quote of quotes; let i = index'>
-        <ul>
-          <li>{{quote.name}} </li>
-          <li>date:{{quote.postDate|date}}</li>
-          <app-quote-detail [quote]= 'quote' (isComplete)=deleteQuote($event,i)></app-quote-detail>
-        </ul>
+    <hr>
+    <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div *ngFor='let quote of quotes; let i = index'>
+          <div>
+            <h3>{{quote.name}} </h3>
+            <h4>date:{{quote.postDate|date}}</h4>
+            <app-quote-detail [quote]='quote' (isComplete)=deleteQuote($event,i)></app-quote-detail>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 
       </div>
-      
+    </div>
   </div>
+
+</div>
