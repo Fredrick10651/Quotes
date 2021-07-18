@@ -14,7 +14,7 @@ export class Quote {
   // }
 
 
-  constructor(public  description: string,public author: string,public postDate: Date ,public name:string){
+  constructor(public  theQuote: string,public author: string,public postDate: Date ,public name:string){
       
   }
 }
