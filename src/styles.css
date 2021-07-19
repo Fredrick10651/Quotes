@@ -1,4 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 
-/*  */
+
+body{
+    overflow-x:hidden;
+    background-image: linear-gradient(to right top, #f4f8ee, #eaf7eb, #def7ec, #d1f7f1, #c6f5f9);}
+h1{
+    float: center;
+}
