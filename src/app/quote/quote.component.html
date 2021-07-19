@@ -1,16 +1,17 @@
 <div class="Container-flid">
   
-    <h1>My Quotes</h1>
+    <h1 class="head">My Quotes</h1>
+    
     <hr>
     <div class="container">
     <div class="row">
       <div class="col-md-6">
         <div *ngFor='let quote of quotes; let i = index'>
-          <div>
-            <h3>{{quote.name}} </h3>
-            <h4>date:{{quote.postDate|date|uppercase}}</h4>
-            <app-quote-detail [quote]='quote' (isComplete)=deleteQuote($event,i)></app-quote-detail>
+          <div class="card shadow-lg p-3 mb-5 bg-white rounded">
             
+            <p><b> Posted By: </b>{{quote.name}} </p>
+            <p><b>Date: </b>{{quote.postDate|date|uppercase}}</p>
+            <app-quote-detail [quote]='quote' (isComplete)=deleteQuote($event,i)></app-quote-detail>
             <app-likes></app-likes>
           </div>
         </div>

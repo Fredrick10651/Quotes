@@ -9,12 +9,12 @@ import {Quote} from '../quote'
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    new Quote('Watch finding Nemo', 'Find an online version and watch merlin find his son',new Date(2020,3,14), 'John'),
-    new Quote('Buy Cookies','I have to buy cookies for the parrot',new Date(2019,6,9),'Kate'),
-    new Quote('Get new Phone Case','Diana has her birthday coming up soon',new Date(2022,1,12),'Perrys'),
-    new Quote('Get Dog Food','Pupper likes expensive snacks',new Date(2019,0,18),'Jake'),
-    new Quote('Solve math homework','Damn Math',new Date(2019,2,14),'Jmes'),
-    new Quote('Plot my world domination plan','Cause I am an evil overlord',new Date(2030,3,14),'Jade'),
+    new Quote('Any fool can write code that a computer can understand. Good programmers write code that humans can understand.', 'Martin Fowler',new Date(2020,3,14), 'John'),
+    new Quote('In order to be irreplaceable, one must always be different','Coco Chanel',new Date(2019,6,9),'Kate'),
+    new Quote('Ruby is rubbish! PHP is phpantastic!','Nikita Popov',new Date(2022,1,12),'Perrys'),
+    new Quote('Code is like humor. When you have to explain it, it’s bad.','Cory House',new Date(2019,0,18),'Jake'),
+    new Quote('Before software can be reusable it first has to be usable.','Ralph Johnson',new Date(2019,2,14),'Jmes'),
+    
   ];
   
   deleteQuote(isComplete, index){
